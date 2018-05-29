@@ -20,7 +20,7 @@ btn.addEventListener("click", function () {
 function addHtml(data) {
   var strHtml = "";
   for (i = 0; i < data.length; i++) {
-    strHtml += "<p>" + "nom :"+ data[i].nom + " " + "prenom :" + data[i].prenom + " " + "âge :" + data[i].âge + " " + "profession :" + data[i].profession + " " + "email :" + data[i].email + " " + "téléphone :" + data[i].téléphone + " " + "</p>";
+    strHtml += "<p>" + data[i].nom + "</p>" + "<p>" + data[i].prenom + "</p>" + "<p>" + data[i].âge + "</p>" + "<p>" + data[i].profession + "</p>" + "<p>" + data[i].email + "</p>" + "<p>" + data[i].téléphone + "</p>" + "<hr>";
   };
   clientContainer.insertAdjacentHTML('beforeend', strHtml);
   // clientContainer.insertAdjacentHTML('beforeend', "testing " + "my " + "AJAX"); TEST SEQUENCE
