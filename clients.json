@@ -1,8 +1,14 @@
-{"nom":"Alencia" ,
+[
+    {"nom":"Alencia",
     "prénom":"Pedro",
     "âge":"34",
     "profession":"Artiste",
     "email":"Pedro.Alencia@mail.com",
-    "téléphone": "06853491"}
-
-    Toulouse = Longitude : 1.44194 Latitude :43.6044 Altitude :144
+    "téléphone": "0685349198"},
+    {"nom":"Pedrosa",
+    "prenom":"Miguel",
+    "âge":"28",
+    "profession":"Banquier",
+    "email":"Miguel.Pedrosa@mail.com",
+    "téléphone":"0610345633"}
+]
