@@ -20,9 +20,10 @@ btn.addEventListener("click", function () {
 function addHtml(data) {
   var strHtml = "";
   for (i = 0; i < data.length; i++) {
-    strHtml += "<p>" + data[i].nom + data[i].prenom + data[i].âge + data[i].profession + data[i].email + data[i].téléphone + "</p>";
+    strHtml += "<p>" + "nom :"+ data[i].nom + " " + "prenom :" + data[i].prenom + " " + "âge :" + data[i].âge + " " + "profession :" + data[i].profession + " " + "email :" + data[i].email + " " + "téléphone :" + data[i].téléphone + " " + "</p>";
   };
-  clientContainer.insertAdjacentHTML('beforeend', "testing " + "my " + "AJAX");
+  clientContainer.insertAdjacentHTML('beforeend', strHtml);
+  // clientContainer.insertAdjacentHTML('beforeend', "testing " + "my " + "AJAX"); TEST SEQUENCE
 };
 
 
