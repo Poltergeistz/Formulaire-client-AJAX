@@ -1,29 +1,9 @@
-/* requette = new XMLHttpRequest();
-requette.onreadystatechange = function(){
-    if (requette.readyState == 4 && requette.status == 200)
-    document.getElementById('reponse').innerHTML = requette.responseText;
-    requette.open('GET', 'clients.json', true)
-    requette.send()
-}; */
-
-var clients = [{"nom":"Pasto", "prenom":"Masto"},
-{"nom":"Petersen","prenom":"Hans"},
-{"nom":"Smith","prenom":"Jake"}]
-
-$.getJSON("clients.json", function(data){
-    var items = [];
-    $.each(data )
-}
-
-$.getJSON( "ajax/test.json", function( data ) {
-    var items = [];
-    $.each( data, function( key, val ) {
-      items.push( "<li id='" + key + "'>" + val + "</li>" );
-    });
-   
-    $( "<ul/>", {
-      "class": "my-new-list",
-      html: items.join( "" )
-    }).appendTo( "body" );
-  });
+var request = new XMLHttpRequest(); // instance 
+request.open('GET','https://api.myjson.com/bins/dcnh2'); // recherche le fichier json via url
+request.onload = function(){ // fonction anonnyme
+  console.log(request.responseText);
+  var data = JSON.parse(request.responseText); // parse le json pour récuperer uniquement l'objet de l'array
+  console.log(data[0]);
+};
+request.send();
 
