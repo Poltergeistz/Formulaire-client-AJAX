@@ -6,6 +6,10 @@ requette.onreadystatechange = function(){
     requette.send()
 }; */
 
+var clients = [{"nom":"Pasto", "prenom":"Masto"},
+{"nom":"Petersen","prenom":"Hans"},
+{"nom":"Smith","prenom":"Jake"}]
+
 $.getJSON("clients.json", function(data){
     var items = [];
     $.each(data )
