@@ -3,7 +3,7 @@ var clientContainer = document.getElementById('clients-info');
 var btn = document.getElementById('btn');
 btn.addEventListener("click", function () {
   var request = new XMLHttpRequest(); // instance 
-  request.open('GET', 'https://api.myjson.com/bins/dcnh2'); // recherche le fichier json via url
+  request.open('GET', 'https://api.myjson.com/bins/11rupi'); // recherche le fichier json via url
   request.onload = function () { // fonction anonnyme
     if (request.status >= 200 && request.status < 400) {
       console.log(request.responseText);
