@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="styles.css">
-    <title>Meteo</title>
+    <title>Formulaire client</title>
 </head>
 
 <body>
     <h1>Clients</h1>
-    <button id="btn">Charger plus de clients</button>
+    <!--  <button id="btn">Charger plus de clients</button>  -->
+    <form>
+        <select name="scroll" size="1">
+        <option id="btn-masto" onclick="clickclack(0)">Masto
+        <option id="btn-hans" onclick="clickclack(1)">Hans
+        <option id="btn-jake" onclick="clickclack(2)" selected>Jake
+        <option id="btn-pedro" onclick="clickclack(3)">Pedro
+        <option id="btn-miguel" onclick="clickclack(4)">Miguel
+        </select>
+    </form> 
     <div id="clients-info"></div>
 
 
