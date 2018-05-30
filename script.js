@@ -1,4 +1,7 @@
 var clientContainer = document.getElementById('clients-info');
+var divContainer = document.createElement("div");
+// divContainer.innerHTML = clientData;
+// clientContainer.parentNode.replaceChild(divContainer,clientContainer);
 
 function clickclack(i) { // Looking for user click -> i = indexOf array 
   var request = new XMLHttpRequest(); // instance 
@@ -13,7 +16,9 @@ function clickclack(i) { // Looking for user click -> i = indexOf array
      } else {
       console.log("connected but error")
     }
-    clientContainer.insertAdjacentHTML('beforeend', clientData)
+    divContainer.innerHTML = clientData;
+    clientContainer.parentNode.replaceChild(divContainer,clientContainer)
+   // clientContainer.insertAdjacentHTML('beforeend', clientData)
   };
   request.send();
 };
