@@ -16,6 +16,3 @@ function clickclack(i) { // Looking for user click -> i = indexOf array
   };
   request.send();
 };
-
-//   var strHtml = "";
-//   strHtml += "<p>" + data[i].nom + "</p>" + "<p>" + data[i].prenom + "</p>" + "<p>" + data[i].âge + "</p>" + "<p>" + data[i].profession + "</p>" + "<p>" + data[i].email + "</p>" + "<p>" + data[i].téléphone + "</p>" + "<hr>";
